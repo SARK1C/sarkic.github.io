@@ -199,328 +199,51 @@
             flex-shrink: 0;
             object-fit: cover;
             border: 2px solid #444;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
         }
 
-        .show-info {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
+        .show-image:hover {
+            border-color: #ffffff;
         }
 
-        .show-date {
-            font-family: 'VT323', monospace;
-            font-size: 1.4rem;
-            color: #aaaaaa;
-            letter-spacing: 2px;
-        }
-
-        .show-venue {
-            font-family: 'UnifrakturMaguntia', cursive;
-            font-size: 1.6rem;
-            color: #ffffff;
-            letter-spacing: 1px;
-            line-height: 1.1;
-        }
-
-        .show-location {
-            font-family: 'VT323', monospace;
-            font-size: 1.2rem;
-            color: #888888;
-            letter-spacing: 1px;
-        }
-
-        .footer {
-            margin-top: auto;
-            font-family: 'VT323', monospace;
-            font-size: 0.95rem;
-            color: #777777;
-            text-align: center;
-            letter-spacing: 1px;
-            z-index: 2;
-        }
-    </style>
-</head>
-<body>
-
-    <img src="logo%20sarkic.jpg" alt="SARKIC" class="profile-pic">
-
-    <h1 class="band-name">SARKIC</h1>
-
-    <div class="album-section">
-        <div class="youtube-embed">
-            <iframe width="100%" height="100%" 
-                    src="https://www.youtube.com/embed/3RNeu5WFMrQ" 
-                    title="SARKIC !FULL ALBUM/EP! 2026" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="links-container">
-        <!-- Instagram -->
-        <a href="https://instagram.com/_sarkic_" class="link-card" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.849.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.668.014-4.948.072-4.354.273-6.78 2.7-7.026 7.052-.058 1.28-.072 1.689-.072 4.948 0 3.259.014 3.668.072 4.948.273 4.354 2.7 6.78 7.052 7.026 1.28.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.273 6.78-2.7 7.026-7.052.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948-.273-4.354-2.7-6.78-7.026-7.026-1.28-.058-1.689-.072-4.948-.072zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-            <span>Instagram</span>
-        </a>
-
-        <!-- Bandcamp -->
-        <a href="https://sark1c.bandcamp.com/album/sarkic" class="link-card" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M0 18.75l7.437-13.5H24l-7.438 13.5z"/></svg>
-            <span>Bandcamp</span>
-        </a>
-
-        <!-- Spotify -->
-        <a href="https://open.spotify.com/artist/1HtzfTI82NKghc7D40Tsgm?si=mf8W-M52S-W6-MnsD3UoGw" class="link-card" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-            <span>Spotify</span>
-        </a>
-
-        <!-- Apple Music -->
-        <a href="https://music.apple.com/us/album/sarkic-ep/1880842043" class="link-card" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-            <span>Apple Music</span>
-        </a>
-    </div>
-
-    <!-- Upcoming Shows Section -->
-    <section class="shows-section">
-        <h2 class="shows-header">Upcoming Shows</h2>
-        <div class="shows-list">
-
-            <div class="show-item">
-                <img src="https://raw.githubusercontent.com/Sark1c/sarkic.github.io/main/Screenshot_20260512-122022.png" alt="May 24 Show" class="show-image">
-                <div class="show-info">
-                    <span class="show-date">May 24</span>
-                    <span class="show-venue">The Mousetrap</span>
-                    <span class="show-location">Philadelphia, PA</span>
-                </div>
-            </div>
-
-            <div class="show-item">
-                <div class="show-image-placeholder">IMG</div>
-                <div class="show-info">
-                    <span class="show-date">May 30</span>
-                    <span class="show-venue">Crafty's Bar</span>
-                    <span class="show-location">Springfield, PA</span>
-                </div>
-            </div>
-
-            <div class="show-item">
-                <img src="https://raw.githubusercontent.com/Sark1c/sarkic.github.io/main/Screenshot_20260512-122058.png" alt="June 10 Show" class="show-image">
-                <div class="show-info">
-                    <span class="show-date">June 10</span>
-                    <span class="show-venue">American Legion Post 214</span>
-                    <span class="show-location">Upper Darby, PA</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARKIC | LINKS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=VT323&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Draculitos';
-            src: url('DraculitoS_.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        :root {
-            --bg-color: #0a0a0a;
-            --text-color: #f0f0f0;
-            --card-bg: #1c1c1c;
-            --card-hover: #2a2a2a;
-            --border-color: #555555;
-        }
-
-        body {
-            font-family: 'VT323', monospace;
-            background: 
-                linear-gradient(rgba(10, 10, 10, 0.88), rgba(10, 10, 10, 0.92)),
-                url('logo%20sarkic.jpg') center center / cover no-repeat fixed;
-            color: var(--text-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            margin: 0;
-            min-height: 100vh;
-            line-height: 1.4;
-        }
-
-        .profile-pic {
-            width: 110px;
-            height: 110px;
-            border-radius: 0;
-            border: 4px solid #ffffff;
-            box-shadow: 0 0 0 6px #1c1c1c;
-            margin-bottom: 30px;
-            image-rendering: pixelated;
-            z-index: 2;
+        /* Lightbox */
+        .lightbox {
             display: none;
-        }
-
-        .band-name {
-            font-family: 'UnifrakturMaguntia', cursive;
-            font-size: 5.1rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-            color: #ffffff;
-            line-height: 0.78;
-            text-transform: uppercase;
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.95);
-            z-index: 2;
-        }
-
-        .album-section {
-            width: 100%;
-            max-width: 720px;
-            margin-bottom: 50px;
-            text-align: center;
-            z-index: 2;
-        }
-
-        .youtube-embed {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border: 4px solid #ffffff;
-            box-shadow: 0 0 0 8px #1c1c1c;
-            border-radius: 0;
-        }
-
-        .youtube-embed iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .links-container {
-            width: 100%;
-            max-width: 420px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-bottom: 50px;
-            z-index: 2;
-        }
-
-        .link-card {
-            font-family: 'UnifrakturMaguntia', cursive;
-            background-color: var(--card-bg);
-            color: var(--text-color);
-            text-decoration: none;
-            padding: 18px 24px;
-            border: 3px solid var(--border-color);
-            font-size: 1.25rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            transition: all 0.2s ease;
-            text-transform: capitalize;
-            display: grid;
-            grid-template-columns: auto 1fr;
-            align-items: center;
-            gap: 14px;
-            text-align: center;
-        }
-
-        .link-card svg {
-            width: 28px;
-            height: 28px;
-            flex-shrink: 0;
-            fill: #f0f0f0;
-            justify-self: start;
-        }
-
-        .link-card:hover {
-            background-color: var(--card-hover);
-            border-color: #ffffff;
-            color: #ffffff;
-            transform: translateY(-3px);
-        }
-
-        .link-card:hover svg {
-            fill: #ffffff;
-        }
-
-        /* Upcoming Shows Section */
-        .shows-section {
-            width: 100%;
-            max-width: 720px;
-            margin-bottom: 50px;
-            z-index: 2;
-        }
-
-        .shows-header {
-            font-family: 'UnifrakturMaguntia', cursive;
-            font-size: 3.8rem;
-            font-weight: 400;
-            letter-spacing: 2px;
-            color: #ffffff;
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.95);
-            text-align: center;
-            margin-bottom: 30px;
-            line-height: 1;
-        }
-
-        .shows-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .show-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background-color: var(--card-bg);
-            border: 3px solid var(--border-color);
-            padding: 18px 24px;
-            transition: all 0.2s ease;
-        }
-
-        .show-item:hover {
-            border-color: #ffffff;
-            background-color: var(--card-hover);
-        }
-
-        .show-image-placeholder {
-            width: 90px;
-            height: 90px;
-            flex-shrink: 0;
-            background-color: #111;
-            border: 2px solid #444;
-            display: flex;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 1000;
             align-items: center;
             justify-content: center;
-            color: #444;
-            font-size: 0.7rem;
-            font-family: 'VT323', monospace;
-            letter-spacing: 1px;
-            text-align: center;
-            line-height: 1.3;
         }
 
-        .show-image {
-            width: 90px;
-            height: 90px;
-            flex-shrink: 0;
-            object-fit: cover;
-            border: 2px solid #444;
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 8px #1c1c1c;
+        }
+
+        .lightbox-close {
+            position: fixed;
+            top: 20px;
+            right: 28px;
+            font-family: 'VT323', monospace;
+            font-size: 2.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            line-height: 1;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover {
+            color: #aaaaaa;
         }
 
         .show-info {
@@ -640,6 +363,30 @@
 
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">✕</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        document.querySelectorAll('.show-image').forEach(img => {
+            img.addEventListener('click', () => {
+                document.getElementById('lightbox-img').src = img.src;
+                document.getElementById('lightbox-img').alt = img.alt;
+                document.getElementById('lightbox').classList.add('active');
+            });
+        });
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
 
 </body>
 </html>
